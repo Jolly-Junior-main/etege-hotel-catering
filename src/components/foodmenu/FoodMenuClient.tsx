@@ -17,6 +17,10 @@ import {
   Leaf,
   Cake,
   Coffee,
+  Pizza,
+  Sandwich,
+  Wine,
+  Citrus,
   X,
   Share2,
   Printer,
@@ -226,14 +230,22 @@ function FoodMenuInner() {
     switch (icon) {
       case "Flame":
         return <Flame className="w-4 h-4" />;
+      case "Pizza":
+        return <Pizza className="w-4 h-4" />;
+      case "Sandwich":
+        return <Sandwich className="w-4 h-4" />;
+      case "Citrus":
+        return <Citrus className="w-4 h-4" />;
+      case "Wine":
+        return <Wine className="w-4 h-4" />;
+      case "Coffee":
+        return <Coffee className="w-4 h-4" />;
       case "Sparkles":
         return <Sparkles className="w-4 h-4" />;
       case "Leaf":
         return <Leaf className="w-4 h-4" />;
       case "Cake":
         return <Cake className="w-4 h-4" />;
-      case "Coffee":
-        return <Coffee className="w-4 h-4" />;
       default:
         return <UtensilsCrossed className="w-4 h-4" />;
     }
